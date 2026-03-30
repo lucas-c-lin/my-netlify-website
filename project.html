@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chen Lin - Project Experience</title>
+    <style>
+        :root {
+            --primary-color: #4682B4; /* 更深的蓝色作为主色 */
+            --secondary-color: #6495ED; /* 稍浅一点的蓝色作为辅助色 */
+            --background-color: #F0F8FF; /* 背景色保持不变，可根据需要调整 */
+            --text-color: #333;
+            --accent-color: #00a06d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+
+        .section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-item {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            position: relative;
+            border-left: 5px solid var(--secondary-color);
+            min-height: 140px; /* 确保有足够高度放右下角图片 */
+        }
+        
+        .project-item:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .project-item h3 {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .project-meta {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        .project-meta span {
+            margin-right: 15px;
+            border: 1px solid #ddd;
+            padding: 3px 8px;
+            border-radius: 12px;
+            background-color: #fff;
+        }
+
+        .project-desc {
+            margin-bottom: 10px;
+            padding-right: 120px; /* 为右侧图片留白 */
+        }
+        
+        .project-desc p {
+            margin: 8px 0;
+        }
+
+        .project-links {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed #ddd;
+        }
+        
+        .project-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+        
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        .logo-box {
+            width: 100px;
+            height: 100px;
+            position: absolute; 
+            bottom: 1.5rem; 
+            right: 1.5rem; 
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页_Home</a></li>
+                <li><a href="academic.html">学术经历_Academic Experience</a></li>
+                <li><a href="project.html">项目经历_Project Experience</a></li>
+                <li><a href="media.html">传媒实践_Media-Related Experience</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <div class="section">
+            <h2>大模型应用研究项目 (LLM Application Research Projects)</h2>
+            
+            <div class="project-item">
+                <h3>小参数语言模型伪词习得能力探索 —— 基于 SFT 指令微调与 LoRA 优化</h3>
+                <div class="project-meta">
+                    <span>时间: 2025.07</span>
+                    <span>大模型应用研究</span>
+                    <span>Python / LoRA / SFT</span>
+                </div>
+                <div class="project-desc">
+                    <p><strong>核心目标：</strong>本项目是一项结合计算心理语言学与指令微调的交叉实验。旨在探究小参数 LLM (Qwen3-0.6B) 在 SFT 指令微调之后对结构化新知识的表征构建能力，解决模型在特定语境下的“语义真空”与“对齐”挑战。</p>
+                    <p><strong>研究流程：</strong>结合 MRC 词典与 Wuggy 工具构建原始伪词 → 利用 DeepSeek V3 编制伪词义 → 基于4种指令策略制作400条指令 → 基于 LLaMA-Factory 执行 LoRA 微调 → 建立基于 SBERT 的自动化语义相似度评测链路。</p>
+                    <p><strong>研究结果：</strong>实验证明模型初步具备语义迁移能力 (余弦相似度 0.68)，还需进一步探讨提示策略和模型参数的影响。</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/lucas-c-lin/LLM-Pseudoword-Acquisition" target="_blank" rel="noopener">📄 项目 GitHub 主页</a>
+                    <a href="https://www.modelscope.cn/models/lucas-c-lin/Qwen3-0.6B-Pseudoword-Acquisition-LoRA" target="_blank" rel="noopener">🚀 微调权重 - 魔搭</a>
+                </div>
+                <div class="logo-box">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=200&h=200&fit=crop&q=80" alt="LLM Project Cover">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>AI辅助二语写作中的提示词策略 —— 基于英文说明文写作过程的混合方法考察</h3>
+                <div class="project-meta">
+                    <span>时间: 2025.03</span>
+                    <span>AI辅助教育 (CALL)</span>
+                    <span>混合方法研究</span>
+                </div>
+                <div class="project-desc">
+                    <p><strong>核心目标：</strong>本研究基于活动理论，通过混合方法考察，关注学生如何设计和部署提示词与 AI 进行交互。</p>
+                    <p><strong>研究流程：</strong>深度追踪 7 名学生的完整英文写作流 → 对交互过程进行逆向 Prompt 分析与文本挖掘。</p>
+                    <p><strong>研究结果：</strong>揭示了学生对“翻译类”提示词的强依赖性，并为优化 AI 辅助写作的 Prompt 预设与反馈机制提供了策略建议。</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://doi.org/10.1109/ICAIE64856.2025.11158182" target="_blank" rel="noopener">🔗 DOI: 10.1109/ICAIE64856.2025.11158182 (EI会议)</a>
+                </div>
+                <div class="logo-box">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&h=200&fit=crop&q=80" alt="Prompt Engineering Cover">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="section">
+            <h2>自然语言处理与量化研究项目 (NLP & Quantitative Research Projects)</h2>
+            
+            <div class="project-item">
+                <h3>中国英语学习者对英语词汇重音分布的隐性习得：一项眼动研究</h3>
+                <div class="project-meta">
+                    <span>时间: 2026.03</span>
+                    <span>毕业论文</span>
+                    <span>Python / GAMM / 眼动实验</span>
+                </div>
+                <div class="project-desc">
+                    <p><strong>核心目标：</strong>考察中国英语学习者是否能够隐性习得英语词汇重音的统计分布规律（首音节重音 > 次音节重音），并利用该概率信息在单词识别的早期阶段（前两个音节内）实时预测目标词。</p>
+                    <p><strong>研究流程：</strong>设置 24 组关键词对（前两音节音段相同但重音位置不同） → 录音并利用 Python 进行声学标注 → 开展眼动实验 → 对 Eyelink 数据 (2.7G) 进行处理 → 构建广义加性混合模型 (GAMM)，分析注视概率随时间变化的非线性动态曲线。</p>
+                    <p><strong>研究结果：</strong>GAMM 模型结果显示，二语者能够提取并利用词汇重音信息，在语音流尚未完全展开时实现单词的实时识别。</p>
+                </div>
+                <div class="logo-box">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=200&h=200&fit=crop&q=80" alt="Eye Tracking Research Cover">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>数字人文视角下的《疯狂动物城》性别话语分析</h3>
+                <div class="project-meta">
+                    <span>时间: 2026.01</span>
+                    <span>数字人文</span>
+                    <span>R / Quarto / 混合效应模型</span>
+                </div>
+                <div class="project-desc">
+                    <p><strong>核心目标：</strong>定量分析电影文本中角色的性别话语权差异及潜在的社会刻板印象。</p>
+                    <p><strong>研究流程：</strong>利用 R 语言清洗、构建语料库 → 构建 TF-IDF 及情感极性特征矩阵 → 建立混合效应模型进行显著性检验。</p>
+                    <p><strong>研究结果：</strong>发现性别在词汇使用与情感倾向上均无显著差异；项目以 Quarto 构建动态文档并部署于 GitHub Pages。</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/lucas-c-lin" target="_blank" rel="noopener">💻 GitHub 主页</a>
+                </div>
+                <div class="logo-box">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop&q=80" alt="Digital Humanities Cover">
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Chen Lin. All rights reserved.</p>
+    </footer>
+</body>
+</html>

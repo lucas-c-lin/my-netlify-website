@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chen Lin - Home</title>
+    <style>
+        :root {
+            --primary-color: #4682B4; /* 更深的蓝色作为主色 */
+            --secondary-color: #6495ED; /* 稍浅一点的蓝色作为辅助色 */
+            --background-color: #F0F8FF; /* 背景色保持不变，可根据需要调整 */
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary-color);
+        }
+
+        .profile h1 {
+            color: var(--primary-color);
+            margin: 1rem 0;
+        }
+
+        .contact-info {
+            margin: 1rem 0;
+            color: var(--secondary-color);
+        }
+
+        .contact-info a {
+            color: #1f4e79;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .introduction {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .introduction h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页_Home</a></li>
+                <li><a href="academic.html">学术经历_Academic Experience</a></li>
+                <li><a href="project.html">项目经历_Project Experience</a></li>
+                <li><a href="media.html">传媒实践_Media-Related Experience</a></li>
+                <!-- <li><a href="其他.html">其他_More</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <!-- 请将这里的图片路径替换为你的实际照片路径 -->
+            <img src="small_MEITU_20250315_200508181.jpg" alt="个人照片">
+            <h1>林晨 <span style="color: var(--primary-color);">(Chen Lin)</span></h1>
+            <p style="color: #00a06d;">北京外国语大学（Beijing Foreign Studies University）</p>
+            <div class="contact-info">
+                <p style="color: #06001c;">E-mail: linchen@bfsu.edu.cn</p>
+                <p style="color: #06001c;">GitHub: <a href="https://github.com/lucas-c-lin" target="_blank" rel="noopener">lucas-c-lin</a></p>
+            </div>
+        </div>
+        <div class="introduction">
+            <h2>About Myself</h2>
+            <p>&nbsp&nbsp&nbsp&nbspMy name is Chen Lin, from Xiamen, Fujian. I graduated from Beijing Foreign Studies University with a major in English (Linguistics) and minors in Journalism and Communication Studies. During my undergraduate years, I ranked 2/172 (top 2%), and received honors including the National Scholarship and Outstanding Student Cadre awards.</p>
+            <p>&nbsp&nbsp&nbsp&nbspMy current academic interests focus on computational linguistics and computer-assisted language learning (CALL), especially around language processing, statistical modeling, and large language model applications. I have worked on projects such as instruction tuning and LoRA optimization for small LLMs, prompt strategy design in AI-assisted bilingual writing, and quantitative studies on stress-pattern acquisition by Chinese learners of English.</p>
+            <p>&nbsp&nbsp&nbsp&nbspTechnically, I mainly use Python and R, and I am experienced with data analysis workflows, Git/GitHub collaboration, and academic writing systems such as Docs-as-Code and Quarto. I also have hands-on media practice in new media operations, graphic design, and audio-video production. If you are interested in Southern Min (Hokkien) language and cultural preservation, I would be very happy to connect and collaborate.</p>
+        </div>
+        <div class="introduction">
+            <h2>关于我</h2>
+            <p>&nbsp&nbsp&nbsp&nbsp我叫林晨，来自福建厦门，毕业于北京外国语大学英语学院，主修英语（语言学），辅修传播学。本科期间专业排名 2/172（前 2%），获国家奖学金、三好学生、优秀学生干部等荣誉。</p>
+            <p>&nbsp&nbsp&nbsp&nbsp我的研究兴趣主要集中在计算语言学方向，重点关注自然语言处理、统计建模与大模型应用。我参与过小参数语言模型 SFT 指令微调与 LoRA 优化、AI 辅助双语写作提示词策略、以及中国英语学习者英语词汇重音习得等研究项目。</p>
+            <p>&nbsp&nbsp&nbsp&nbsp在技术上，我主要使用 Python 和 R，熟悉数据分析流程、Git/GitHub 协作，以及 Docs-as-Code、Quarto 等学术写作与发布工具。同时我也有较丰富的传媒实践经验，包括新媒体运营、平面设计与音视频制作。如果你也关注闽南文化与闽南语保护，欢迎联系交流，一起推进相关工作。</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;  2025 Chen Lin. All rights reserved.</p>
+    </footer>
+</body>
+</html>

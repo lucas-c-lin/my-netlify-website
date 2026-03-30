@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chen Lin - Academic Experience</title>
+    <style>
+        :root {
+            --primary-color: #4682B4; /* 更深的蓝色作为主色 */
+            --secondary-color: #6495ED; /* 稍浅一点的蓝色作为辅助色 */
+            --background-color: #F0F8FF; /* 背景色保持不变，可根据需要调整 */
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+
+        .section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .conference-item h3 {
+            font-size: 1.2em; /* 调整文章标题字号 */
+        }
+
+        .location-school {
+            text-align: left;
+            margin-left: 0;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd; /* 添加分割线 */
+        }
+
+        .conference-item {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            position: relative; /* 添加相对定位 */
+        }
+
+        .logo-box {
+            width: 100px;
+            height: 100px;
+            position: absolute; /* 添加绝对定位 */
+            bottom: 1rem; /* 调整为底部距离 */
+            right: 1rem; /* 保持右侧距离 */
+        }
+
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页_Home</a></li>
+                <li><a href="academic.html">学术经历_Academic Experience</a></li>
+                <li><a href="project.html">项目经历_Project Experience</a></li>
+                <li><a href="media.html">传媒实践_Media-Related Experience</a></li>
+                <!-- <li><a href="其他.html">其他_More</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>研究兴趣 (Research Interests)</h2>
+            <ul>
+                <li>计算语言学、计算心理语言学</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>发表 (Publications)</h2>
+            <ul>
+                <li>
+                    <h3>Prompt Engineering as Mediation: Investigating AI Chatbot-assisted Writing Process from an Activity Theory Perspective <span style="color: rgba(34, 33, 36, 0.747); font-size: smaller"><i>(accepted)</i></span></h3>
+                    <p><i>2025 International Conference on Artificial Intelligence and Education (ICAIE), Suzhou, China</i></p>
+                    <span style="color: rgb(42, 0, 100); font-size: smaller; border: 1px solid gray; border-radius: 15px; padding: 2px 10px; margin-right: 10px; background-color: #e6f7ff;">2025</span>
+                    <span style="color: rgb(42, 0, 100); font-size: smaller; border: 1px solid gray; border-radius: 15px; padding: 2px 10px; margin-right: 10px; background-color: #e6f7ff;">Conference Paper</span>
+                    <span style="color: rgb(42, 0, 100); font-size: smaller; border: 1px solid gray; border-radius: 15px; padding: 2px 10px; margin-right: 10px; background-color: #e6f7ff;">Ei Compendex</span>
+                </li>
+            </ul>
+        </div>
+        <!-- ... existing code ... -->
+        <div class="section">
+            <h2>会议报告 (Conference Presentations)</h2>
+            <div class="conference-item">
+                <h3>Investigating AI Chatbot-Assisted EFL Writing Processes: An Activity Theory Perspective</h3>
+                <p>26th Warwick International Conference in Applied Linguistics</p>
+                <div class="location-school">
+                    <p>Coventry, United Kingdom<span style="color: gray; font-size: smaller;"> 英国, 考文垂</span></p>
+                    <p>University of Warwick<span style="color: gray; font-size: smaller;"> 华威大学</span></p>
+                </div>
+                <div class="logo-box">
+                    <!-- 这里放置学校 logo 图片 -->
+                    <img src="华威logo.svg" alt="华威大学 logo">
+                </div>
+            </div>
+            <div class="conference-item">
+                <h3>Prompt Engineering as Mediation: Investigating AI Chatbot-assisted Writing Process from an Activity Theory Perspective</h3>
+                <p>2025 International Conference on Artificial Intelligence and Education</p>
+                <div class="location-school">
+                    <p>中国，苏州<span style="color: gray; font-size: smaller;"> Suzhou, China</span></p>
+                    <p>西交利物浦大学<span style="color: gray; font-size: smaller;"> Xi'an Jiaotong-Liverpool University</span></p>
+                </div>
+                <div class="logo-box">
+                    <!-- 这里放置学校 logo 图片 -->
+                    <img src="西交利物浦logo.jpg" alt="西交利物浦大学 logo">
+                </div>
+            </div>
+            <div class="conference-item">
+                <h3>基于TAMMI 2.0的人类-AI平行语料库文本形态学特征对比研究 <br>
+                    <span style="color: gray; font-size: smaller;"> A Comparative Study of Text Morphological Features in Human-AI Parallel Corpora Based on TAMMI 2.0</span>
+                </h3>
+                <p>
+                    第二届语言科学与多语智能应用论坛暨第四届语言学跨学科研究学术研讨会
+                </p>
+                <div class="location-school">
+                    <p>中国，上海<span style="color: gray; font-size: smaller;"> Shanghai, China</span></p>
+                    <p>上海外国语大学 <span style="color: gray; font-size: smaller;"> Shanghai International Studies University</span></p>
+                </div>
+                <div class="logo-box">
+                    <!-- 这里放置学校 logo 图片 -->
+                    <img src="上外logo.jpg" alt="上海外国语大学 logo">
+                </div>
+            </div>
+            <div class="conference-item">
+                <h3>Investigating the Impact of LLM-powered Chatbot-Assisted Dynamic Assessment on Learners’ Explicit and Implicit Grammar Knowledge</h3>
+                <p>CPCECPR Conference 2025</p>
+                <div class="location-school">
+                    <p>中国香港<span style="color: gray; font-size: smaller;"> Hong Kong SAR, China</span></p>
+                    <p>香港理工大学<span style="color: gray; font-size: smaller;"> The Hong Kong Polytechnic University</span></p>
+                </div>
+                <div class="logo-box">
+                    <!-- 这里放置学校 logo 图片 -->
+                    <img src="香港理工logo.jpg" alt="香港理工大学 logo">
+                </div>
+            </div>
+            <div class="conference-item">
+                <h3> GenAI 翻译技术在纪录片国际传播中的应用分析 </h3>
+                <p>AI 赋能翻译与国际传播研讨会</p>
+                <div class="location-school">
+                    <p>中国，北京<span style="color: gray; font-size: smaller;"> Beijing, China</span></p>
+                    <p>北京外国语大学<span style="color: gray; font-size: smaller;"> Beijing Foreign Studies University</span></p>
+                </div>
+                <div class="logo-box">
+                    <!-- 这里放置学校 logo 图片 -->
+                    <img src="北外logo.jpg" alt="北京外国语大学 logo">
+                </div>
+            </div>
+            <div class="conference-item">
+                <h3>Exploring Chinese EFL Students’ Perceptions and Usage of LLM-Powered Chatbots in Expository Writing: An Activity Theory Perspective</h3>
+                <p>
+                    第八届中国二语习得研究高端论坛暨中国英汉语比较研究会二语习得专委会成立二十周年研讨会 <br>
+                    <span style="color: gray; font-size: smaller;"> The 8th High-level Forum for Second Language Acquisition Studies in China & The 20th Anniversary Seminar of China Association for Second Language Acquisition </span>
+                </p>
+                <div class="location-school">
+                    <p>中国，成都 <span style="color: gray; font-size: smaller;"> Chengdu, China</span></p>
+                    <p>电子科技大学<span style="color: gray; font-size: smaller;"> University of Electronic Science and Technology of China</span></p>
+                </div>
+                <div class="logo-box">
+                    <!-- 这里放置学校 logo 图片 -->
+                    <img src="电子科大logo.jpg" alt="电子科技大学 logo">
+                </div>
+            </div>
+            <div class="conference-item">
+                <h3>A Preliminary Investigation into Human-AI Interactive Negotiation Competence: Exploring the Usage of ChatGPT by EFL Learners</h3>
+                <p>
+                    2024（第20届）语言智能教学国际会议暨2024英语教育及应用语言学国际大会 <br>
+                    <span style="color: gray; font-size: smaller;"> 2024 (20th) ChinaCALL Conference & International Congress on English Language Education and Applied Linguistics</span>
+                </p>
+                <div class="location-school">
+                    <p>中国，北京<span style="color: gray; font-size: smaller;"> Beijing, China</span></p>
+                    <p>北京外国语大学<span style="color: gray; font-size: smaller;"> Beijing Foreign Studies University</span></p>
+                </div>
+                <div class="logo-box">
+                    <!-- 这里放置学校 logo 图片 -->
+                    <img src="北外logo.jpg" alt="北京外国语大学 logo">
+                </div>
+            </div>
+        </div>
+<!-- ... existing code ... -->
+    </div>
+    <footer>
+        <p>&copy; 2025 Chen Lin. All rights reserved.</p>
+    </footer>
+</body>
+</html>
